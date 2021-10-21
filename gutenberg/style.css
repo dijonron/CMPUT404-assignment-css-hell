@@ -1,0 +1,53 @@
+body {
+  background-color: wheat;
+  padding: 1em;
+}
+
+h1,
+h2 {
+  font-family: cursive;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+p {
+  font-family: serif;
+  margin: 25px;
+}
+
+p::first-letter {
+  font-family: cursive;
+  font-size: xx-large;
+}
+
+a {
+  text-decoration: none;
+}
+
+#title,
+#author {
+  text-align: center;
+}
+
+#preamble {
+  padding: 4em;
+  margin: 4em;
+  font-size: smaller;
+  border: solid black 2px;
+  background-color: white;
+}
+
+p.characters {
+  font-family: cursive;
+}
+
+p.characters::first-letter {
+  font-size: medium;
+}
+
+h2.characters {
+  font-family: serif;
+  font-size: medium;
+}

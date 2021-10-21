@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  background-color: #f5f2ef;
+  background: linear-gradient(to bottom right, #0149ff, #d4fb1c);
+  padding: 2em;
+}
+
+.name {
+  display: inline-block;
+  color: #ff8000;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.section-description {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  justify-content: space-around;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.side-bar {
+  margin-top: 1.5em;
+  justify-content: center;
+  padding: 1em;
+}
+
+.bar-contents {
+  background: linear-gradient(to bottom right, #d4fb1c, #0149ff);
+  padding: 1em 1em 1.5em 1em;
+  margin-top: 1.5em;
+  color: #f5f2ef;
+  box-shadow: 1em 1em 1.5em #000;
+}
+
+img {
+  box-shadow: 1em 1em 1.5em #000;
+  animation: grow 1.5s ease-in-out infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.history {
+  margin-top: 3em;
+}
+
+ul {
+  padding: 0;
+  padding-left: 0.6em;
+}
+
+li.point {
+  list-style: disc;
+  padding-top: 1.5em;
+  font-weight: bold;
+  line-height: 1em;
+  font-size: large;
+}
+
+.contact-card {
+  list-style: none;
+  /* color: #ff850b; */
+}
+
+ul.subpoint {
+  list-style: disc;
+  padding-inline-start: 1.5em;
+  font-size: medium;
+}
+
+.content {
+  font-size: 14pt;
+  line-height: 1em;
+}
